@@ -1,3 +1,5 @@
+
+
 class Payment:
     """This class stores payment details."""
 
@@ -11,12 +13,14 @@ class Payment:
 
         choice = input("Choose 1 or 2: ")
 
+        while choice != "1" and choice != "2":
+            print("Wrong choice. Please try again.")
+            choice = input("Choose 1 or 2: ")
+
         if choice == "1":
             self.method = "Card"
         elif choice == "2":
             self.method = "Cash"
-        else:
-            self.method = "Unknown"
 
     def show_payment(self):
         print("Payment method:", self.method)
@@ -25,4 +29,10 @@ class Payment:
         return self.method
 
     def thank_customer(self):
-        print("Thank you so much for visiting Jannu's Sweet Bakery!")
+        print("Thank U for visiting Jannu's Sweet Bakery")
+
+    def is_paid(self):
+        if self.method == "":
+            return False
+        else:
+            return True

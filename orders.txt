@@ -1,8 +1,1 @@
-Customer: Kushal DUMB Nair
-Age: 19
-Gender: Male
-Red Velvet ChesseCake - 60 euro
-Coffee - 15 euro
-Total: 75 euro
-Payment: Card
--------------------------
+
