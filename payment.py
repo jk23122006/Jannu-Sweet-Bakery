@@ -1,7 +1,7 @@
 
 
 class Payment:
-    """This class stores payment details."""
+
 
     def __init__(self):
         self.method = ""
@@ -31,7 +31,7 @@ class Payment:
     def thank_customer(self):
         print("Thank U for visiting Jannu's Sweet Bakery")
 
-    def is_paid(self):
+    def paid(self):
         if self.method == "":
             return False
         else:

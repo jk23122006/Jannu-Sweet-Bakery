@@ -1,15 +1,13 @@
 
 
 class Customer:
-    """This class stores customer details."""
+
 
     def __init__(self, name, age, gender):
         self.name = name
         self.age = age
         self.gender = gender
     
-    def say_hello(self):
-        print("\nHiii", self.name, "welcome to our bakery!")
 
     def get_title(self):
         if self.gender == "Male":
@@ -18,9 +16,10 @@ class Customer:
             return "maam"
         else:
             return "dear customer"
+        
+    def say_hi(self):
+        print("\nHiii", self.name, "welcome to our bakery!")
 
-    def get_mood(self):
-        return self.mood
     
     def show_details(self):
         print("Name:", self.name)

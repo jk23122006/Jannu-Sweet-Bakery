@@ -1,7 +1,7 @@
 
 
 class Order:
-    """This class stores the customer's order."""
+
 
     def __init__(self):
         self.items = []
@@ -65,7 +65,7 @@ class Order:
             file.close()
 
 
-    def is_empty(self):
+    def empty(self):
         if len(self.items) == 0:
             return True
         else:

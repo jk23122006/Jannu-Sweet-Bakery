@@ -1,19 +1,19 @@
 
 
 class Menu:
-    """This class stores one bakery menu item."""
 
-    def __init__(self, id, name, price, category):
-        self.id = id
-        self.name = name
+
+    def __init__(self, item_id, item_name, price, category):
+        self.item_id = item_id
+        self.item_name = item_name
         self.price = price
         self.category = category
 
     def show_item(self):
-        print(self.id + ".", self.name, "-", self.price, "euro")
+        print(self.item_id + ".", self.item_name, "-", self.price, "euro")
 
     def get_name(self):
-        return self.name
+        return self.item_name
 
     def get_price(self):
         return self.price

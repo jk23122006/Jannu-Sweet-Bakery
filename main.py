@@ -27,7 +27,7 @@ print("1. Male")
 print("2. Female")
 print("3. Prefer not to say")
 
-gender_choice = input("Enter 1, 2, or 3: ")
+gender_choice = input("Enter 1, 2, or 3:- ")
 
 if gender_choice == "1":
     gender = "Male"
@@ -41,7 +41,7 @@ customer = Customer(name, age, gender)
 order = Order()
 payment = Payment()
 
-customer.say_hello()
+customer.say_hi()
 
 
 
@@ -88,7 +88,7 @@ menu = [
 ]
 
 
-
+#added weather and mood to make the code more interactive
 print("\nHow is the weather in Berlin today?")
 print("1. Sunny")
 print("2. Cold")
@@ -102,13 +102,13 @@ if weather == "1":
 elif weather == "2":
     print("\n \n |||| Uhhhh:( usual a Berlin day Hot coffee will save us!!! ||||")
 elif weather == "3":
-    print("\n |||| Rainy days = cake + bed ||||")
+    print("\n\n |||| Rainy days = cake + bed ||||")
 else:
     print("\n\n |||| Okhhhh if we dont know, coffee is always the safest option ||||")
 
 
 
-print("\nHow |is ur mood today?")
+print("\nHow is ur mood today?")
 print("1. Super happy")
 print("2. Joyful")
 print("3. Okay okay")
@@ -117,11 +117,11 @@ print("5. Sad")
 print("6. I dont know")
 
 
-mood = input("Choose 1, 2, 3, 4, or 5: ")
+mood = input("Choose 1, 2, 3, 4, 5 or 6: ")
 
-
+#This message will be shown with the bill in the end
 if mood == "1":
-    mood_msg = "Youre absolutely glowing today... Keep spreading that energy!!!! "
+    mood_msg = "You are absolutely glowing today... Keep spreading that energy!!!! "
 
 elif mood == "2":
     mood_msg = "Looks like today treated you well:) We hope this was the cherry on top!! "
@@ -186,7 +186,7 @@ while True:
             found = False
 
             for item in menu:
-                if order_choice == item.id:
+                if order_choice == item.item_id:
                     order.add_item(item)
                     found = True
 
@@ -199,7 +199,7 @@ while True:
 
     elif choice == "3":
 
-        if order.is_empty():
+        if order.empty():
             print("You didn't order anything yet.")
         else:
             order.show_bill(customer, mood_msg)
