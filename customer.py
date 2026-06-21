@@ -1,3 +1,4 @@
+"""Stores Customer info"""
 
 
 class Customer:

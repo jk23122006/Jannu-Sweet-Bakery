@@ -1,3 +1,4 @@
+"""manages customer's payment method"""
 
 
 class Payment:

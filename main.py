@@ -1,4 +1,5 @@
-
+"""Jannu's Sweet Bakery Ordering System"""
+"""Main bakery odereing program"""
 
 from customer import Customer
 from menu import Menu
@@ -12,17 +13,18 @@ print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("\nNow we'll ask u few questionsssss......")
 
 
-name = input("\nWhat is ur NAME? ")
+name = input("\nWhat is your NAME? ")
 
+#keep asking until the customer enter age as a number
 while True:
     try:
-        age = int(input("\nWhat is ur AGE? "))
+        age = int(input("\nWhat is your AGE? "))
         break
     except ValueError:
         print("Please enter ur age as a number.")
 
 
-print("\nChoose ur gender:")
+print("\nChoose your gender:")
 print("1. Male")
 print("2. Female")
 print("3. Prefer not to say")
@@ -44,7 +46,7 @@ payment = Payment()
 customer.say_hi()
 
 
-
+#menu items are categoriezed
 menu = [
 
 
@@ -56,14 +58,12 @@ menu = [
     Menu("6", "Nutella Brownie                    ", 8, "Cakes"),
     Menu("7", "Butterscotch Cake                  ", 15, "Cakes"),
 
-    
     Menu("8", "Vanilla Bean                       ", 5, "Ice Creams"),
     Menu("9", "Belgian Chocolate                  ", 10, "Ice Creams"),
     Menu("10", "Kulfi Ice Cream                    ", 9.99, "Ice Creams"),
     Menu("11", "Coffee Toffee Ice Cream           ", 10, "Ice Creams"),
     Menu("12", "Cookies & Cream Ice Cream         ", 10, "Ice Creams"),
 
-    
     Menu("13", "Espresso                          ", 4.99, "Drinks"),
     Menu("14", "Cappuccino                        ", 5.99, "Drinks"),
     Menu("15", "Latte                             ", 6, "Drinks"),
@@ -71,12 +71,13 @@ menu = [
     Menu("17", "Vanilla Latte                     ", 8, "Drinks"),
     Menu("18", "Iced Mocha                        ", 10, "Drinks"),
 
-    
     Menu("19", "Nutella Brownie + Vanilla Latte   ", 15, "Combos"),
     Menu("20", "Tiramisu Cake + Cappuccino        ", 29, "Combos"),
     Menu("21", "Pistachio Cake + Vanilla Latte    ", 36, "Combos"),
     Menu("22", "Chocolate Fudge Cake + Iced Mocha ", 20, "Combos"),
     Menu("23", "Cookies & Cream Cake + Latte      ", 20, "Combos"),
+
+
 
     Menu("24", "Monday : Nutella Brownie          ", 8, "Day"),
     Menu("25", "Tuesday : Red Velvet Cake         ", 25, "Day"),
@@ -88,8 +89,8 @@ menu = [
 ]
 
 
-#added weather and mood to make the code more interactive
-print("\nHow is the weather in Berlin today?")
+#added weather and mood questions to make the code more interactive
+print("\nHow is the weather like in Berlin today?")
 print("1. Sunny")
 print("2. Cold")
 print("3. Raining")

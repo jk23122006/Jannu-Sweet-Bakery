@@ -1,1 +1,9 @@
 
+Customer:- k
+Age:- 19
+Gender:- Male
+Sunday : Pistachio Cake - 25 euro
+Tiramisu Cake + Cappuccino - 29 euro
+Total: 54 euro
+Payment: Card
+-------------------------

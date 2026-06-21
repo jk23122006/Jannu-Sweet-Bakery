@@ -1,3 +1,4 @@
+"""manages customer bills and save order details """
 
 
 class Order:
@@ -49,9 +50,9 @@ class Order:
     def save_order(self, customer, payment):
             file = open("orders.txt", "a")
 
-            file.write("Customer: " + customer.name + "\n")
-            file.write("Age: " + str(customer.age) + "\n")
-            file.write("Gender: " + customer.gender + "\n")
+            file.write("Customer:- " + customer.name + "\n")
+            file.write("Age:- " + str(customer.age) + "\n")
+            file.write("Gender:- " + customer.gender + "\n")
 
             for item in self.items:
                 file.write(

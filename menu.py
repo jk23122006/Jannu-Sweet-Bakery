@@ -1,3 +1,4 @@
+"""Stores and displays menu items"""
 
 
 class Menu:
@@ -13,7 +14,7 @@ class Menu:
         print(self.item_id + ".", self.item_name, "-", self.price, "euro")
 
     def get_name(self):
-        return self.item_name
+        return self.item_name.strip()
 
     def get_price(self):
         return self.price
