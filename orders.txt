@@ -7,3 +7,31 @@ Tiramisu Cake + Cappuccino - 29 euro
 Total: 54 euro
 Payment: Card
 -------------------------
+Customer:- Caroline
+Age:- 35
+Gender:- Female
+Wednesday : Tiramisu Cake - 30 euro
+Kulfi Ice Cream - 9.99 euro
+Red Velvet Cake - 30 euro
+Total: 69.99000000000001 euro
+Payment: Cash
+-------------------------
+Customer:- Caroline
+Age:- 35
+Gender:- Female
+Red Velvet Cake - 30 euro
+Vanilla Bean - 5 euro
+Saturday : Butterscotch Cake - 12 euro
+Cookies & Cream Cake + Latte - 20 euro
+Total: 67 euro
+Payment: Cash
+-------------------------
+Customer:- Caroline
+Age:- 35
+Gender:- Female
+Monday : Nutella Brownie - 8 euro
+Tiramisu Cake + Cappuccino - 29 euro
+Vanilla Bean - 5 euro
+Total: 42 euro
+Payment: Cash
+-------------------------

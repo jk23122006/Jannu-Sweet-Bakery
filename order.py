@@ -29,10 +29,11 @@ class Order:
         return total
 
     def show_bill(self, customer, mood_msg):
+        print("-------------------------------")
         print("\nHere is ur bill", customer.get_title())
-        print("-------------------------")
+        print("-------------------------------")
         customer.show_details()
-        print("-------------------------")
+        print("-------------------------------")
 
         number = 1
 
@@ -40,14 +41,16 @@ class Order:
             print(number, item.get_name(), "-", item.get_price(), "euro")
             number = number + 1
 
-        print("-------------------------")
+        print("-------------------------------")
         print("Total:", self.calculate_total(), "euro")
-        print("-------------------------")
+        print("-------------------------------")
 
         print("\n A little note for you:")
         print(mood_msg)
+        print("\n-------------------------------")
 
     def save_order(self, customer, payment):
+            #Appened so previous customer details  are not deleted
             file = open("orders.txt", "a")
 
             file.write("Customer:- " + customer.name + "\n")

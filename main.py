@@ -15,7 +15,7 @@ print("\nNow we'll ask u few questionsssss......")
 
 name = input("\nWhat is your NAME? ")
 
-#keep asking until the customer enter age as a number
+#keep asking until the customer enters age as a number
 while True:
     try:
         age = int(input("\nWhat is your AGE? "))
@@ -60,12 +60,12 @@ menu = [
 
     Menu("8", "Vanilla Bean                       ", 5, "Ice Creams"),
     Menu("9", "Belgian Chocolate                  ", 10, "Ice Creams"),
-    Menu("10", "Kulfi Ice Cream                    ", 9.99, "Ice Creams"),
+    Menu("10", "Kulfi Ice Cream                    ", 9, "Ice Creams"),
     Menu("11", "Coffee Toffee Ice Cream           ", 10, "Ice Creams"),
     Menu("12", "Cookies & Cream Ice Cream         ", 10, "Ice Creams"),
 
-    Menu("13", "Espresso                          ", 4.99, "Drinks"),
-    Menu("14", "Cappuccino                        ", 5.99, "Drinks"),
+    Menu("13", "Espresso                          ", 4, "Drinks"),
+    Menu("14", "Cappuccino                        ", 5, "Drinks"),
     Menu("15", "Latte                             ", 6, "Drinks"),
     Menu("16", "Masala Chai                       ", 5, "Drinks"),
     Menu("17", "Vanilla Latte                     ", 8, "Drinks"),
@@ -83,7 +83,7 @@ menu = [
     Menu("25", "Tuesday : Red Velvet Cake         ", 25, "Day"),
     Menu("26", "Wednesday : Tiramisu Cake         ", 30, "Day"),
     Menu("27", "Thursday : Cookies & Cream Cake   ", 12, "Day"),
-    Menu("28", "Friday : Chocolate Fudge Cake     ", 8.99, "Day"),
+    Menu("28", "Friday : Chocolate Fudge Cake     ", 8, "Day"),
     Menu("29", "Saturday : Butterscotch Cake      ", 12, "Day"),
     Menu("30", "Sunday : Pistachio Cake           ", 25, "Day")
 ]
@@ -97,7 +97,7 @@ print("3. Raining")
 print("4. I don't know")
 
 weather = input("Choose 1, 2, 3, or 4: ")
-
+#Giving them recommendations based on the weather
 if weather == "1":
     print("\n \n |||| WOWWWW!! SUN in Berlin... Lets get ice cream... ||||")
 elif weather == "2":
